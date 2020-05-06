@@ -4,7 +4,8 @@
   "description": "Learnig some tips in React",
   "main": "index.js",
   "scripts": {
-    "format": "prettier \"src/**/*.{js, html}\" --write"
+    "format": "prettier \"src/**/*.{js, html}\" --write",
+      "lint": "eslint \"src/**/*.{js, html}\" --quite"
   },
   "repository": "git@github.com:brunoalfred/React.git",
   "author": "Bruno Alfred <alfredybruno@gmail.com>",
