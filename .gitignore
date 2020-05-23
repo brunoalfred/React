@@ -1,3 +1,5 @@
+# Better gitignore file for the nodejs projects.
+
 # Logs
 logs
 *.log
