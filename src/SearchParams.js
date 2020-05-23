@@ -13,3 +13,5 @@ const SearchParams = () => {
         </div>
     );
 }
+
+export default SearchParams;
