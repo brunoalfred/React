@@ -5,7 +5,9 @@ import { ANIMALS } from "@frontendmasters/pet";
 const SearchParams = () => {
   // eslint-disable-next-line no-undef
   const [location, updateLocation] = useState("Seattle, WA");
-  const [animal, updateAnimal] = useState("");
+  const [breeds, updateBreeds] = useState([]);
+
+  
 
   return (
     <div className="search-params">
@@ -33,6 +35,25 @@ const SearchParams = () => {
                 {animal}
               </option>
             ))}
+          </select>
+        </label>
+
+        <label htmlFor="breed">
+          Breed
+          <select
+            disabled={!breed.length}
+            id="breed"
+            value={breed}
+            onChange={(event) => updateBreed(event.target.value)}
+            onBlur={(event) => updateBreed(event.target.value)}
+          >
+            <option>
+              {breeds.map((breed) => (
+                <option key={breed} value={breed}>
+                  {breed}
+                </option>
+              ))}
+            </option>
           </select>
         </label>
       </form>
