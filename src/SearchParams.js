@@ -1,13 +1,21 @@
-import React from "react"
+// eslint-disable-next-line no-unused-vars
+import React, {useState} from "react"
 
 const SearchParams = () => {
-    const location = "Seattle, WA";
+    
+    // eslint-disable-next-line no-undef
+    const [location, updateLocation] = useState("Seattle, WA");
+
     return(
         <div className="search-params">
             <form>
                 <label htmlFor="location">
-                    Location
-                    <input id="location" value={location} placeholder="Location"/>
+                    {location}
+                    <input id="location" 
+                    value={location} 
+                    placeholder="Location"
+                    onChange={event => updateLocation(event.target.value)}
+                    />
                 </label>
             </form>
         </div>
