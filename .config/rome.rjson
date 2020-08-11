@@ -1,0 +1,9 @@
+// For configuration documentation see http://romefrontend.dev/#project-configuration
+name: "actix-front"
+root: true
+
+
+lint: {
+	ignore: []
+	globals: []
+}
